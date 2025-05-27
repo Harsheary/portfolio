@@ -19,7 +19,7 @@ export default function About() {
           About Me
         </p>
         <p>
-          Hey! I’m Harsh Eary, a Toronto-based software developer with a growing
+          Hey! I&apos;m Harsh Eary, a Toronto-based software developer with a growing
           passion for artificial intelligence. I'm currently studying Software
           Engineering Technology – Artificial Intelligence at Centennial
           College, and I spend most of my time building clean, efficient
@@ -28,8 +28,8 @@ export default function About() {
         <br />
         <p>
           I love thinking about the simplest, most straightforward way to solve
-          complex challenges. It’s that balance between logic and creativity
-          that keeps me hooked. Whether I’m working with Next.js, React, or
+          complex challenges. It&apos;s that balance between logic and creativity
+          that keeps me hooked. Whether I&apos;m working with Next.js, React, or
           diving into backend logic with Node and SQL, I aim to create tools and
           experiences that feel effortless for the end user.
         </p>
@@ -42,7 +42,7 @@ export default function About() {
         </p>
         <br />
         <p>
-          Outside of code, I’m probably tending to my plants (yes, I’m that
+          Outside of code, I&apos;m probably tending to my plants (yes, I&apos;m that
           person). They keep me grounded and remind me that good things take
           time—whether you're growing roots or writing scalable software.
         </p>
