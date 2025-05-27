@@ -20,7 +20,7 @@ export default function About() {
         </p>
         <p>
           Hey! I&apos;m Harsh Eary, a Toronto-based software developer with a growing
-          passion for artificial intelligence. I'm currently studying Software
+          passion for artificial intelligence. I&apos;m currently studying Software
           Engineering Technology – Artificial Intelligence at Centennial
           College, and I spend most of my time building clean, efficient
           solutions to real-world problems—one line of code at a time.
@@ -44,7 +44,7 @@ export default function About() {
         <p>
           Outside of code, I&apos;m probably tending to my plants (yes, I&apos;m that
           person). They keep me grounded and remind me that good things take
-          time—whether you're growing roots or writing scalable software.
+          time—whether you&apos;re growing roots or writing scalable software.
         </p>
       <p className="relative z-20 mt-15 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-2xl font-bold text-transparent sm:text-5xl">
         Experience
