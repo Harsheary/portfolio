@@ -6,7 +6,7 @@ import { Github, Linkedin } from "lucide-react";
 import { FlipWords } from "./ui/flip-words";
 function HeroSection() {
   return (
-    <div className="h-auto min-h-screen md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
+    <div className="h-auto min-h-screen md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto  md:py-0">
       <WavyBackground className="max-w-4xl mx-auto sm:pb-40 relative">
         <div className="p-4 relative md:mt-70 z-10 w-full text-center">
           <h1 className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
@@ -18,7 +18,7 @@ function HeroSection() {
           </p>
           <div className="mt-4 w-full flex flex-col items-center gap-4">
             
-            <Link href='./ManavChaudhary.pdf'> 
+            <Link href='./HarshEary_resume.pdf'> 
             <Button
             borderRadius="1.75rem"
             className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 hover:cursor-pointer">
