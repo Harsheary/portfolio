@@ -12,10 +12,10 @@ function HeroSection() {
           <h1 className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Hi! I am <strong>Harsh</strong>, and I write code
           </h1>
-          <p className="mt-4 font-normal text-base md:text-2xl text-neutral-300 max-w-lg mx-auto">
+          <div className="mt-4 font-normal text-base md:text-2xl text-neutral-300 max-w-lg mx-auto">
             Connect to build apps that pair <FlipWords words = {['clean', 'reliable', 'efficient']} /> <br />code with quietly
             elegant design
-          </p>
+          </div>
           <div className="mt-4 w-full flex flex-col items-center gap-4">
             
             <Link href='./HarshEary_resume.pdf'> 

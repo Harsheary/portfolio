@@ -19,7 +19,7 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed inset-x-0 max-w-xl mx-auto z-50 ", className)}
     >
       <Menu setActive={setActive}>
-        <Link href={"#about"}>
+        <Link href={"/#about"}>
           <MenuItem
             setActive={setActive}
             active={active}
@@ -27,7 +27,7 @@ function Navbar({ className }: { className?: string }) {
           ></MenuItem>
         </Link>
         <MenuItem setActive={setActive} active={active} item="Projects">
-          <div className="text-sm mx-10 grid sm:grid-cols-2 gap-10 p-4 grid-cols-1 ">
+          <div className="text-sm mx-10 grid sm:grid-cols-2 gap-10 p-4 grid-cols-1 cursor-none">
           
             <ProductItem
               title="Mystery Message"
@@ -39,11 +39,20 @@ function Navbar({ className }: { className?: string }) {
               title="Kahoot Clone | Quiz Master"
               href="https://kahoot-clonee-dll2.onrender.com/"
               src="./Kahoot_clone.png"
-              description="Production ready Tailwind css components for your next project"
+              description="A Kahoot-like project built in MERN stack"
+              />
+            <ProductItem
+              title="Traffic Fatality ML Project"
+              href="https://github.com/Harsheary/supervised-learning-ksi"
+              src="./ML_KSI_project.png"
+              description="ML pipeline predicting accident fatality outcomes"
               />
             </div>
-          
-           
+          <div className="text-center mt-4">
+            <Link href="/projects" className="text-sm text-neutral-400 hover:text-neutral-200 transition-colors">
+              View All Projects →
+            </Link>
+          </div>
         </MenuItem>
         
       </Menu>

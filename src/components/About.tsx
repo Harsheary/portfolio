@@ -12,48 +12,55 @@ export default function About() {
           "dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]"
         )}
       />
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black pb-20"></div>
       <div className="relative z-20 font-normal text-base md:text-xl text-neutral-500 mx-5 sm:mx-85 h-screen">
         <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-2xl font-bold text-transparent sm:text-5xl">
           About Me
         </p>
         <p>
-          Hey! I&apos;m Harsh Eary, a Toronto-based software developer with a growing
-          passion for artificial intelligence. I&apos;m currently studying Software
-          Engineering Technology – Artificial Intelligence at Centennial
-          College, and I spend most of my time building clean, efficient
-          solutions to real-world problems—one line of code at a time.
+          Hey! I&apos;m Harsh Eary, a Toronto-based software developer studying AI at 
+          Centennial College. I spend my days building things that (hopefully) make 
+          life a little easier; whether that&apos;s automating engineering workflows with 
+          AI or helping people send anonymous messages to their crushes.
         </p>
         <br />
         <p>
-          I love thinking about the simplest, most straightforward way to solve
-          complex challenges. It&apos;s that balance between logic and creativity
-          that keeps me hooked. Whether I&apos;m working with Next.js, React, or
-          diving into backend logic with Node and SQL, I aim to create tools and
-          experiences that feel effortless for the end user.
+          I&apos;m the kind of person who actually enjoys debugging at 2 AM (don&apos;t judge). 
+          There&apos;s something oddly satisfying about turning messy problems into clean 
+          solutions. Give me React, .NET, or some Python ML pipelines, and I&apos;m in my 
+          element - building, breaking, and rebuilding until it just *works*.
         </p>
         <br />
         <p>
-          What pulled me into AI is its potential to create real impact. The
-          idea that software can learn, adapt, and solve problems at scale
-          fascinates me—and the more I study it, the more that fascination
-          grows.
+          What really gets me excited? AI that does real stuff. Not just buzzwords, 
+          but actual tools that empower us, predict outcomes, or automate the 
+          boring bits so humans can focus on the interesting parts. The intersection 
+          of code and intelligence is where I live.
         </p>
         <br />
         <p>
-          Outside of code, I&apos;m probably tending to my plants (yes, I&apos;m that
-          person). They keep me grounded and remind me that good things take
-          time—whether you&apos;re growing roots or writing scalable software.
+          When I&apos;m not staring at VSCode, you&apos;ll find me either tending to my 
+          ever-growing plant collection (yes, I talk to them) or pretending I&apos;m 
+          not procrastinating by reorganizing my Docker containers. Balance is key, 
+          right?
         </p>
       <p className="relative z-20 mt-15 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-2xl font-bold text-transparent sm:text-5xl">
         Experience
       </p>
-          <div className="flex flex-col">
-            <p>Website Developer Intern</p>
-            <div className="flex w-full justify-between">
-              <div>@ Physiomed</div>
-              <div> Jan 2025 - Apr 2025</div>
+          <div className="flex flex-col gap-6 ">
+            <div className="flex flex-col">
+              <p>Software Developer Intern</p>
+              <div className="flex w-full justify-between">
+                <div>@ Tetra Tech</div>
+                <div>Sep 2025 - Dec 2025</div>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <p>Website Developer Intern</p>
+              <div className="flex w-full justify-between">
+                <div>@ Physiomed</div>
+                <div>Jan 2025 - Apr 2025</div>
+              </div>
             </div>
           </div>
       </div>
