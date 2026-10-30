@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Portfolio Content
+
+The homepage experience timeline is maintained in `src/components/About.tsx`.
+`public/HarshEary_resume.pdf` is the downloadable copy of
+`../resumes-pdf/resume_software_engineer.pdf`.
+
 ## Getting Started
 
 First, run the development server:

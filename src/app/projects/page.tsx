@@ -1,40 +1,43 @@
-"use client";
-import React from "react";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
+import type { Metadata } from "next";
+import Contact from "@/components/Contact";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Selected full-stack and machine-learning projects by software engineer Harsh Eary.",
+  alternates: {
+    canonical: "/projects",
+  },
+  openGraph: {
+    url: "/projects",
+    title: "Projects | Harsh Eary",
+    description:
+      "Selected full-stack and machine-learning projects by software engineer Harsh Eary.",
+  },
+};
 
 export default function ProjectsPage() {
-  const projects = [
-    {
-      title: "Mystery Message",
-      description:
-        "Send anonymous messages to friends or strangers. A full-stack web application built with modern technologies for secure and private messaging.",
-      link: "https://mystery-message.in",
-      image: "/mysteryMessage.png",
-    },
-    {
-      title: "Kahoot Clone | Quiz Master",
-      description:
-        "A Kahoot-like project built in MERN stack allowing users to create and play quizzes with real-time features and engaging user experience.",
-      link: "https://kahoot-clonee-dll2.onrender.com/",
-      image: "/Kahoot_clone.png",
-    },
-    {
-      title: "Traffic Fatality ML Project",
-      description:
-        "Machine learning pipeline to predict accident fatality outcomes using the Traffic Police KSI dataset. Built with Python, featuring data preprocessing, SMOTE balancing, and Flask API deployment.",
-      link: "https://github.com/Harsheary/supervised-learning-ksi",
-      image: "/ML_KSI_project.png",
-    },
-  ];
-
   return (
-    <div className="min-h-screen w-full bg-white dark:bg-black pt-32">
-      <div className="max-w-7xl mx-auto px-8">
-        <p className="text-neutral-500 dark:text-neutral-400 text-center max-w-2xl mx-auto mb-8">
-          Here are some of the projects I&apos;ve built. Each one represents a unique challenge and learning experience.
-        </p>
-        <HoverEffect items={projects} />
-      </div>
-    </div>
+    <>
+      <main className="min-h-screen bg-black pt-32">
+        <div className="mx-auto max-w-6xl px-6 pb-4 pt-16">
+          <p className="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-400">
+            Project archive
+          </p>
+          <h1 className="mt-4 max-w-4xl text-balance text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+            Products, experiments, and engineering case studies.
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-400">
+            Work spanning full-stack product development, real-time interaction,
+            and machine-learning delivery.
+          </p>
+        </div>
+        <FeaturedProjects showHeading={false} />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

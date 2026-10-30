@@ -47,6 +47,7 @@
 }
 
 :root {
+  color-scheme: dark;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -119,7 +120,71 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
+  }
+  ::selection {
+    @apply bg-cyan-300/25 text-white;
+  }
+  a,
+  button {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply relative bg-black py-24 sm:py-32;
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-white/[0.035] backdrop-blur-sm;
+  }
+
+  .tech-pill {
+    @apply rounded-full border border-white/10 bg-white/[0.035] px-3 py-1.5 text-xs text-neutral-300;
+  }
+
+  .primary-button {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-cyan-300 px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-cyan-200;
+  }
+
+  .secondary-button {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.035] px-5 py-3 text-sm font-medium text-neutral-200 transition hover:border-cyan-300/30 hover:bg-cyan-300/10 hover:text-white;
+  }
+
+  .icon-link {
+    @apply inline-flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.025] text-neutral-400 transition hover:border-cyan-300/30 hover:bg-cyan-300/10 hover:text-cyan-200;
+  }
+
+  .contact-link {
+    @apply flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-sm text-neutral-300 transition hover:border-cyan-300/30 hover:bg-cyan-300/10 hover:text-white;
+  }
+}
+
+.dot-grid {
+  background-size: 24px 24px;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.12) 1px,
+    transparent 1px
+  );
+  mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
